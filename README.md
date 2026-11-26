@@ -15,3 +15,10 @@ python -m venv .venv
 .venv\Scripts\python -m pytest tests
 ```
 Resultado final del ETL: `data/processed/dataset_modelo.parquet` (y `.csv`).
+
+## Modelos (fase 2)
+```powershell
+.venv\Scripts\python src\models\entrenar.py
+.venv\Scripts\python src\models\pruebas_estadisticas.py
+.venv\Scripts\python src\models\alerta_clasificador.py
+```
