@@ -161,7 +161,8 @@ Proyecto_CAM_1/
 | El dashboard dice "Falta dashboard/datos/…" | No se hizo el paso 3. Ejecutar `.venv\Scripts\python src\pipeline.py --rapido` |
 | El mapa de la página "Calidad" sale en blanco | El mapa base necesita internet; el resto funciona sin conexión |
 | El puerto 8501 está ocupado | `.venv\Scripts\streamlit run app\app.py --server.port 8502` |
-| El paso 2 falla al instalar `torch` | Verificar la conexión a internet. `torch` se descarga del repositorio oficial de PyTorch, como indica `requirements.txt` |
+| El paso 2 falla al instalar `torch` con un mensaje sobre *Long Path* | La carpeta tiene una ruta muy larga. Clonar el proyecto en una ruta corta, por ejemplo `C:\Proyecto_CAM_1` o el Escritorio, y repetir el paso 2 |
+| El paso 2 falla al instalar `torch` por otro motivo | Verificar la conexión a internet. `torch` se descarga del repositorio oficial de PyTorch, como indica `requirements.txt` |
 
 ---
 

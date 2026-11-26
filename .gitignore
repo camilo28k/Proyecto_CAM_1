@@ -1,9 +1,9 @@
 .venv/
 __pycache__/
 *.pyc
-data/interim/
-data/processed/
+/data/interim/
+/data/processed/
 .ipynb_checkpoints/
-models/
+/models/
 dashboard/datos/
-logs/
+/logs/
