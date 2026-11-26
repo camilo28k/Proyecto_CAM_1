@@ -138,7 +138,9 @@ def main():
         "pruebas_estadisticas": pd.read_csv(REP / "pruebas_estadisticas.csv"),
     }
     for nombre, t in tablas.items():
-        t.to_csv(OUT / f"{nombre}.csv", index=False, float_format="%.4f", encoding="utf-8")
+        # p-valores muy pequeños (1e-70) se perderían con 4 decimales
+        fmt = None if nombre == "pruebas_estadisticas" else "%.4f"
+        t.to_csv(OUT / f"{nombre}.csv", index=False, float_format=fmt, encoding="utf-8")
         print(f"{nombre:24s} {len(t):>8,} filas  {t.shape[1]} columnas")
 
 

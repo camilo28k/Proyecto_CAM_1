@@ -32,7 +32,7 @@ Este documento describe cómo encajan las piezas del sistema. Las decisiones y l
                             │                └────────────┬─────────────┘
                             ▼ dashboard/datos/*.csv       │
                     ┌──────────────────────────────────────▼───────────┐
-                    │  DASHBOARD POWER BI (5 páginas)                   │
+                    │  DASHBOARD STREAMLIT app/ (5 páginas)             │
                     └──────────────────────────────────────────────────┘
 
         src/pipeline.py ejecuta todo en orden y valida cada etapa
@@ -51,7 +51,8 @@ Este documento describe cómo encajan las piezas del sistema. Las decisiones y l
 | Estadística | `src/models/pruebas_estadisticas.py` | predicciones | `reports/pruebas_estadisticas.csv` |
 | Modelo operativo | `src/pronosticar.py entrenar` | variables 2018 en adelante | `models/operativo_rf_<h>h.joblib` y su ficha |
 | Pronóstico | `src/pronosticar.py pronosticar` | dataset y modelo operativo | `reports/pronostico_actual.json` y `dashboard/datos/pronostico_actual.csv` |
-| Exportación a BI | `src/dashboard/exportar_powerbi.py` | todo lo anterior | `dashboard/datos/*.csv` (12 tablas) |
+| Exportación de tablas | `src/dashboard/exportar_powerbi.py` | todo lo anterior | `dashboard/datos/*.csv` (12 tablas) |
+| Dashboard | `app/app.py` y `app/paginas/*.py` | `dashboard/datos/*.csv` | aplicación web local (Streamlit) |
 | Orquestador | `src/pipeline.py` | — | ejecuta y valida todo; log en `logs/` |
 
 ## 3. Cómo ejecutarlo
@@ -79,6 +80,11 @@ python -m venv .venv
 .venv\Scripts\python src\pronosticar.py pronosticar --fecha "2024-11-14 06:00"
 ```
 
+**Dashboard:**
+```powershell
+.venv\Scripts\streamlit run app\app.py
+```
+
 **Pruebas automáticas:**
 ```powershell
 .venv\Scripts\python -m pytest tests
@@ -88,7 +94,7 @@ python -m venv .venv
 
 1. Copia el archivo nuevo en la carpeta de su estación, por ejemplo `Datos_CAM/La_Lindosa/La_Lindosa_2026.csv`. Debe tener el mismo formato de MeerKAD: separador `;`, coma decimal y fechas día/mes/año.
 2. Ejecuta `.venv\Scripts\python src\pipeline.py --rapido`. Esto vuelve a cargar y limpiar los datos, reentrena el modelo operativo con los datos nuevos, regenera las tablas de Power BI y calcula el pronóstico para la última hora disponible.
-3. En Power BI, pulsa **Inicio → Actualizar**.
+3. Reinicia el dashboard (`.venv\Scripts\streamlit run app\app.py`) o, si ya está abierto, usa el menú ⋮ → **Clear cache** y luego **Rerun**.
 
 Si el archivo trae una columna con un nombre nuevo, la carga **se detiene con un error que nombra la columna**. Así no se pierden datos en silencio. Para resolverlo, agrega la columna a `MAPA_COLUMNAS` en `src/etl/cargar_crudos.py`.
 
@@ -111,5 +117,5 @@ Si el archivo trae una columna con un nombre nuevo, la carga **se detiene con un
 ## 7. Limitaciones de la arquitectura actual
 
 - Los datos se procesan **por lotes**. No hay conexión en tiempo real con la transmisión satelital de la CAM.
-- El dashboard se actualiza a mano en Power BI Desktop. Para que se actualice solo haría falta Power BI Service con una puerta de enlace (gateway).
+- El dashboard corre en el computador local. Para publicarlo se puede usar Streamlit Community Cloud.
 - El modelo operativo se reentrena completo cada vez. Con datos de varios años sigue tardando menos de 2 minutos, así que por ahora no es un problema.
