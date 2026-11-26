@@ -8,7 +8,7 @@ Si eres nuevo en el proyecto, empieza aquí. Cada fase tiene un informe con lo q
 | 1 | Sistema de calidad de datos (ETL) | ✅ Terminada (2026-11-26) | [FASE-1](FASE-1-sistema-calidad-datos.md) |
 | 2 | Modelos predictivos | ✅ Terminada (2026-11-26) | [FASE-2](FASE-2-modelos-predictivos.md) |
 | 3 | Dashboard en Power BI | 🟡 Preparado; falta el .pbix y las pruebas | [FASE-3](FASE-3-dashboard.md) |
-| 4 | Integración | ⏳ Pendiente | — |
+| 4 | Integración | ✅ Terminada (2026-11-26) | [FASE-4](FASE-4-integracion.md) |
 | 5 | Artículo y documento final | ⏳ Pendiente | — |
 
 **Decisión central hasta ahora:** se predice el nivel del río en la estación **La Lindosa** (cauce principal del río Las Ceibas, a ~16 km de Neiva). **Los Micos** se usa como estación de apoyo.

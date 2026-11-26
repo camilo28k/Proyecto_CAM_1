@@ -1,0 +1,41 @@
+{
+ "generado": "2026-11-26T11:32:11",
+ "estacion": "La Lindosa (río Las Ceibas)",
+ "fecha_hora": "2025-11-28 22:00:00",
+ "nivel_m": 0.507,
+ "linea_base_m": 0.527,
+ "anomalia_m": -0.021,
+ "alerta_actual": "NORMAL",
+ "umbrales_m": {
+  "amarilla": 1.027,
+  "naranja": 1.527,
+  "roja": 2.027
+ },
+ "pronostico": [
+  {
+   "horizonte_h": 1,
+   "fecha_hora": "2025-11-28 23:00:00",
+   "nivel_pronosticado_m": 0.508,
+   "anomalia_pronosticada_m": -0.019,
+   "alerta_pronosticada": "NORMAL",
+   "nivel_real_m": 0.509
+  },
+  {
+   "horizonte_h": 3,
+   "fecha_hora": "2025-11-29 01:00:00",
+   "nivel_pronosticado_m": 0.511,
+   "anomalia_pronosticada_m": -0.016,
+   "alerta_pronosticada": "NORMAL",
+   "nivel_real_m": 0.52
+  },
+  {
+   "horizonte_h": 6,
+   "fecha_hora": "2025-11-29 04:00:00",
+   "nivel_pronosticado_m": 0.514,
+   "anomalia_pronosticada_m": -0.013,
+   "alerta_pronosticada": "NORMAL",
+   "nivel_real_m": 0.511
+  }
+ ],
+ "aviso": "Herramienta académica de apoyo. No reemplaza las alertas oficiales de la CAM ni de Gestión del Riesgo."
+}

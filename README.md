@@ -9,22 +9,9 @@ Proyecto de grado de Ingeniería de Sistemas en CORHUILA. Consta de tres partes:
 ```powershell
 python -m venv .venv
 .venv\Scripts\python -m pip install -r requirements.txt
-.venv\Scripts\python src\etl\cargar_crudos.py
-.venv\Scripts\python src\etl\diagnostico_calidad.py
-.venv\Scripts\python src\etl\procesar.py
-.venv\Scripts\python -m pytest tests
+.venv\Scripts\python src\pipeline.py          # flujo completo (~15 min)
+.venv\Scripts\python -m pytest tests            # 25 pruebas
+.venv\Scripts\python src\pronosticar.py pronosticar --fecha "2024-11-14 06:00"
 ```
-Resultado final del ETL: `data/processed/dataset_modelo.parquet` (y `.csv`).
-
-## Modelos (fase 2)
-```powershell
-.venv\Scripts\python src\models\entrenar.py
-.venv\Scripts\python src\models\pruebas_estadisticas.py
-.venv\Scripts\python src\models\alerta_clasificador.py
-```
-
-## Dashboard (fase 3)
-```powershell
-.venv\Scripts\python src\dashboard\exportar_powerbi.py
-```
-Después, seguir [dashboard/GUIA_CONSTRUCCION.md](dashboard/GUIA_CONSTRUCCION.md) en Power BI Desktop.
+- Arquitectura y cómo agregar datos nuevos: [ARQUITECTURA.md](ARQUITECTURA.md)
+- Dashboard: [dashboard/GUIA_CONSTRUCCION.md](dashboard/GUIA_CONSTRUCCION.md)
