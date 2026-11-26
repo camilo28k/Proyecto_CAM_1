@@ -1,0 +1,5 @@
+estacion,etapa,nivel_completitud_pct,lluvia_completitud_pct,n_huecos_nivel,huecos_<=6h,nivel_min,nivel_max,nivel_media
+La_Lindosa,antes,89.21,89.66,135,54,0.385,3.114,0.796
+La_Lindosa,despues,88.45,89.66,90,1,0.385,3.114,0.798
+Los_Micos,antes,86.05,86.99,537,449,0.05,1.82,0.366
+Los_Micos,despues,85.78,86.99,100,1,0.05,1.82,0.365
