@@ -58,7 +58,7 @@ python -m venv .venv
 .venv\Scripts\python -m pip install -r requirements.txt
 ```
 
-### Paso 3. Generar los datos y el modelo (unos 3 minutos)
+### Paso 3. Generar los datos y el modelo (unos 4 minutos)
 
 Los datos procesados y los modelos **no se suben a GitHub** porque se regeneran a partir de los datos originales de la CAM, que sí están en `Datos_CAM/`. Este comando hace todo:
 
@@ -75,7 +75,7 @@ Al final debe aparecer algo así:
 [4/6] operativo ... ok
 [5/6] powerbi ... ok
 [6/6] pronostico ... ok
-Flujo completo en 2.6 min.
+Flujo completo en 3.4 min.
 ```
 
 > `--rapido` usa los resultados de la comparación de modelos que ya vienen en el repositorio, en `reports/`. Para **repetir todo el experimento** (entrenar y comparar los 6 modelos, unos 15 minutos), usar `.venv\Scripts\python src\pipeline.py` sin `--rapido`. Los resultados son idénticos.
