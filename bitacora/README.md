@@ -7,7 +7,7 @@ Si eres nuevo en el proyecto, empieza aquí. Cada fase tiene un informe con lo q
 | 0 | Organización, inventario de los datos y selección de la estación | ✅ Terminada (2026-11-26) | [FASE-0](FASE-0-organizacion-y-seleccion-estacion.md) |
 | 1 | Sistema de calidad de datos (ETL) | ✅ Terminada (2026-11-26) | [FASE-1](FASE-1-sistema-calidad-datos.md) |
 | 2 | Modelos predictivos | ✅ Terminada (2026-11-26) | [FASE-2](FASE-2-modelos-predictivos.md) |
-| 3 | Dashboard en Power BI | ⏳ Pendiente | — |
+| 3 | Dashboard en Power BI | 🟡 Preparado; falta el .pbix y las pruebas | [FASE-3](FASE-3-dashboard.md) |
 | 4 | Integración | ⏳ Pendiente | — |
 | 5 | Artículo y documento final | ⏳ Pendiente | — |
 

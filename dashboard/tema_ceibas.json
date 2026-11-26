@@ -1,0 +1,26 @@
+{
+  "name": "Alertas Las Ceibas",
+  "dataColors": ["#1565C0", "#26A69A", "#F9A825", "#EF6C00", "#C62828", "#6A1B9A", "#78909C", "#2E7D32"],
+  "background": "#FFFFFF",
+  "foreground": "#263238",
+  "tableAccent": "#1565C0",
+  "good": "#2E7D32",
+  "neutral": "#F9A825",
+  "bad": "#C62828",
+  "maximum": "#C62828",
+  "center": "#F9A825",
+  "minimum": "#2E7D32",
+  "textClasses": {
+    "title": { "fontFace": "Segoe UI Semibold", "fontSize": 14, "color": "#263238" },
+    "header": { "fontFace": "Segoe UI Semibold", "fontSize": 12, "color": "#263238" },
+    "label": { "fontFace": "Segoe UI", "fontSize": 10, "color": "#455A64" },
+    "callout": { "fontFace": "Segoe UI Semibold", "fontSize": 28, "color": "#263238" }
+  },
+  "visualStyles": {
+    "page": { "*": { "background": [{ "color": { "solid": { "color": "#F5F7FA" } }, "transparency": 0 }] } },
+    "*": { "*": {
+      "background": [{ "show": true, "color": { "solid": { "color": "#FFFFFF" } }, "transparency": 0 }],
+      "border": [{ "show": true, "color": { "solid": { "color": "#E0E6ED" } }, "radius": 8 }]
+    } }
+  }
+}

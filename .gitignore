@@ -5,3 +5,4 @@ data/interim/
 data/processed/
 .ipynb_checkpoints/
 models/
+dashboard/datos/

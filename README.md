@@ -22,3 +22,9 @@ Resultado final del ETL: `data/processed/dataset_modelo.parquet` (y `.csv`).
 .venv\Scripts\python src\models\pruebas_estadisticas.py
 .venv\Scripts\python src\models\alerta_clasificador.py
 ```
+
+## Dashboard (fase 3)
+```powershell
+.venv\Scripts\python src\dashboard\exportar_powerbi.py
+```
+Después, seguir [dashboard/GUIA_CONSTRUCCION.md](dashboard/GUIA_CONSTRUCCION.md) en Power BI Desktop.
