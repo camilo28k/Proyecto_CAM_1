@@ -1,3 +1,5 @@
+# PyTorch (solo CPU) se descarga del repositorio oficial de PyTorch
+--extra-index-url https://download.pytorch.org/whl/cpu
 altair==6.3.0
 anyio==4.16.0
 attrs==26.1.0
