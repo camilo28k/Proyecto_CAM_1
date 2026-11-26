@@ -2,7 +2,7 @@
 
 Proyecto de grado de Ingeniería de Sistemas en CORHUILA. Consta de tres partes: un sistema de calidad de datos hidrometeorológicos, modelos predictivos del nivel del río y un dashboard en Power BI.
 
-- **Estado y decisiones:** ver [docs/fases/README.md](docs/fases/README.md).
+- **Estado y decisiones:** ver [bitacora/README.md](bitacora/README.md).
 - **Datos originales:** `Datos_CAM/` (CAM, 6 estaciones, 2017-2025). No se modifican.
 
 ## Puesta en marcha (PowerShell)

@@ -26,7 +26,7 @@ RANGOS_CAM = {
     "presion_hpa": (500, 1100),
 }
 
-# Umbrales propios del proyecto (justificados en docs/fases/FASE-1)
+# Umbrales propios del proyecto (justificados en bitacora/FASE-1)
 PICO_DESVIO_M = 0.5            # desvío del registro respecto a sus dos vecinos
 PICO_VECINOS_M = 0.15          # los vecinos deben parecerse entre sí
 PICO_VENTANA = pd.Timedelta("20min")

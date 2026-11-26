@@ -38,7 +38,7 @@ Proyecto Grado/
 ├── reports/              tablas y figuras de resultados
 ├── dashboard/            Power BI (fase 3)
 ├── paper/                artículo (fase 5)
-└── docs/fases/           estos informes
+└── bitacora/           estos informes
 ```
 
 - Entorno virtual `.venv` con Python 3.14. Las librerías y sus versiones exactas quedan en `requirements.txt`: pandas, numpy, openpyxl, matplotlib y pyarrow.
