@@ -1,0 +1,13 @@
+# Finales de línea consistentes entre Windows y GitHub
+* text=auto
+*.py text eol=lf
+*.md text eol=lf
+*.csv text eol=lf
+*.toml text eol=lf
+*.json text eol=lf
+*.txt text eol=lf
+*.xlsx binary
+*.pdf binary
+*.docx binary
+*.parquet binary
+*.png binary
